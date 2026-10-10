@@ -1,5 +1,6 @@
 ---
 name: write-wiki
+model: sonnet
 description: 사용자가 붙여넣은 용어 설명(다른 코딩 에이전트에서 복사한 글)이나 모르는 용어를 받아 위키 규격(terms/<category>/<keyword>/README.md + reference/*.md)으로 등록한다. 붙여넣은 글이 이미 조사 결과인지, 모르는 걸 묻는 것인지 먼저 라우팅하고, 필요하면 research-term 으로 새로 조사한 뒤 포맷에 맞춰 저장하고 설명한다. "위키에 추가", "이거 등록해줘", 용어 설명 붙여넣기에 사용한다.
 ---
 
