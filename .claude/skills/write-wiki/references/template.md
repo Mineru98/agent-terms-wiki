@@ -9,6 +9,8 @@ aliases: [MCP]
 category: development
 status: draft
 updated: 2026-10-10
+prev: [development/json-rpc]
+next: [development/skill, development/tool-use]
 ---
 
 # Model Context Protocol
@@ -41,7 +43,13 @@ updated: 2026-10-10
 
 ## 관련 용어
 
-- [skill](../skill/README.md) — 한 줄 관계 설명
+- 먼저 알면 좋은 용어 (prev)
+  - [json-rpc](../json-rpc/README.md) — 왜 먼저 알아야 하는지 한 줄
+- 이어서 볼 용어 (next)
+  - [skill](../skill/README.md) — 한 줄 관계 설명
+  - [tool-use](../tool-use/README.md) — 한 줄 관계 설명
+- 비교·인접 용어 (순서 없음)
+  - [plugin](../plugin/README.md) — 혼동하기 쉬운 지점
 
 ## 참고 자료
 
@@ -58,6 +66,16 @@ updated: 2026-10-10
 | `category` | 상위 폴더명과 반드시 일치 |
 | `status` | `draft`(조사 결과 미검수) 또는 `reviewed`(출처 대조 완료) |
 | `updated` | `YYYY-MM-DD` |
+| `prev` | (선택) 이 용어 전에 알면 좋은 용어. `category/slug` 목록. 여러 개 가능 |
+| `next` | (선택) 이 용어 다음에 보면 좋은 용어. `category/slug` 목록. 여러 개 가능 |
+
+### prev / next 규칙
+
+- 링크드 리스트를 여러 갈래로 확장한 구조다. 한 용어가 앞·뒤를 여럿 가질 수 있어 학습 순서가 DAG 를 이룬다.
+- 양방향으로 맞춘다. A.next 에 B 가 있으면 B.prev 에 A 가 있어야 한다. `--check` 가 검사한다.
+- 존재하는 용어만 쓴다. 자기 자신, 순환(next 를 따라가 돌아옴)은 금지.
+- `prev`/`next` 는 "배우는 순서"가 분명할 때만 쓴다. 순서 없는 비교·인접 용어는 본문 `관련 용어` 의 별도 항목에만 둔다.
+- front matter 의 prev/next 와 본문 `관련 용어` 링크는 같은 내용을 가리켜야 한다.
 
 ## reference/*.md 규칙
 
