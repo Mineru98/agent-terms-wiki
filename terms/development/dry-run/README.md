@@ -82,7 +82,10 @@ docker compose --dry-run up -d
 
 ## 관련 용어
 
-_(미확인)_ — 위키에 등록된 관련 용어가 아직 없다. Plan Mode, Sandbox, Mock, Rollback 은 미등록이라 링크하지 않았다.
+- 비교·인접 용어 (순서 없음)
+  - [smoke-test](../smoke-test/README.md) — Dry-run 은 실행하지 않고 영향을 미리 확인하고, 스모크 테스트는 실제로 실행해 핵심 기능이 동작하는지 확인한다.
+
+Plan Mode, Sandbox, Mock, Rollback 은 미등록이라 링크하지 않았다.
 
 ## 참고 자료
 

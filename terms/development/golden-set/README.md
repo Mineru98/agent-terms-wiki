@@ -102,7 +102,10 @@ Claude Code, Codex 같은 코딩 에이전트를 쓰는 프로젝트에서 다�
 
 ## 관련 용어
 
-_(등록된 관련 용어 없음)_ — Eval Harness, Benchmark 는 아직 위키에 없다.
+- 비교·인접 용어 (순서 없음)
+  - [smoke-test](../smoke-test/README.md) — 스모크 테스트는 변경 직후 핵심 기능이 살아 있는지 보는 빠른 1차 확인이고, 골든셋은 검증된 문제와 판정 기준으로 반복 측정하는 평가다.
+
+Eval Harness, Benchmark 는 아직 위키에 없어 링크하지 않았다.
 
 ## 참고 자료
 
